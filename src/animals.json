@@ -1,0 +1,62 @@
+[
+    {
+        "animalType": "coyote",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D5571D04-1DD8-B71B-0BA23C9D5B70CDC2/proxy/hires/"
+    },
+    {
+        "animalType": "elk",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D596053D-1DD8-B71B-0BE7CF966929DA37/proxy/hires/"
+    },
+    {
+        "animalType": "sheep",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D5B45E52-1DD8-B71B-0BDDF06290068A5A/proxy/hires/"
+    },
+    {
+        "animalType": "aligator",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D5763A0E-1DD8-B71B-0BF6F684FAA30846/proxy/hires/"
+    },
+    {
+        "animalType": "goat",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D5D68765-1DD8-B71B-0B8F8100F1975A04/proxy/hires/"
+    },
+    {
+        "animalType": "ptarmigan",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D5715F7E-1DD8-B71B-0B4CA63163371287/proxy/hires/"
+    },
+    {
+        "animalType": "ram",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D5B45E52-1DD8-B71B-0BDDF06290068A5A/proxy/hires/"
+    },
+    {
+        "animalType": "bighorn",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D6315B6A-1DD8-B71B-0B6DAE97D0CFD95A/proxy/hires/"
+    },
+    {
+        "animalType": "moose",
+        "image": "https://www.nps.gov/npgallery/GetAsset/ec977aad-6d6c-4a15-80d5-2c3af0173f7b/proxy/hires/"
+    },
+    {
+        "animalType": "lynx",
+        "image": "https://www.nps.gov/npgallery/GetAsset/ff480e4f-7e86-4672-86e0-514127ef0db0/proxy/hires/"
+    },
+    {
+        "animalType": "pronghorn",
+        "image": "https://www.nps.gov/npgallery/GetAsset/10f8601b-cbd4-487c-ae4c-cbbf9446eefb/proxy/hires/"
+    },
+    {
+        "animalType": "turtle",
+        "image": "https://www.nps.gov/npgallery/GetAsset/1c33521e-23dd-49fc-a8f9-2ae5cf6ff13f/proxy/hires/"
+    },
+    {
+        "animalType": "bullelk",
+        "image": "https://www.nps.gov/npgallery/GetAsset/6d005904-7398-44bb-a656-df89d28ef85f/proxy/hires/"
+    },
+    {
+        "animalType": "duck",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D83249C0-1DD8-B71B-0B012771DD7606EB/proxy/hires/"
+    },
+    {
+        "animalType": "groundsquirrel",
+        "image": "https://www.nps.gov/npgallery/GetAsset/D6C7001A-1DD8-B71B-0B8052E83C9CF4D6/proxy/hires/"
+    }
+]

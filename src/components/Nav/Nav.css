@@ -1,0 +1,23 @@
+.nav-pills {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Oswald, 'Courier New', Courier, monospace;
+    background: #000;
+    min-height: 55px;
+    /* width: 100%; */
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    z-index: 99;
+    white-space: nowrap;
+}
+
+.nav-pills a {
+    color: #fff;
+}
+
+#nplogo {
+    margin-right: 1em;
+}
