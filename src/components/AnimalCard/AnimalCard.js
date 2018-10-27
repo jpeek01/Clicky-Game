@@ -5,7 +5,7 @@ const AnimalCard = props => (
     <div className="card">
         <div className="img-container">
             <a onClick={() => props.selectAnimal(props.animalType)} 
-                className={props.curScore === 0 ? "style_prevu_kit style_prevu_kit_ex" : "style_prevu_kit"}
+                className={props.currrentScore === 0 ? "style_prevu_kit style_prevu_kit_ex" : "style_prevu_kit"}
             >
                 <img alt={props.animal} src={props.image} />
             </a>

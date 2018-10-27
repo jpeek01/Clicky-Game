@@ -2,26 +2,24 @@ import React, { Component } from 'react';
 import './App.css';
 import animals from './animals.json'
 import Wrapper from './components/Wrapper'
-import Navpills from './components/Nav'
+import Nav from './components/Nav'
 import Title from './components/Title'
 import AnimalCard from './components/AnimalCard'
 
 class App extends Component {
     state = {
         message: "",
-        topScore: 0,
-        curScore: 0,
+        highScore: 0,
+        currentScore: 0,
         animals: animals,
         unselectedAnimals: animals
     }
 
-    componentDidMount() {
-    }
-
-    shuffleArray = array => {
-        for (let i = array.length - 1; i > 0; i--) {
+    shuffleArray = animalCards => {
+        for (let i = animalCards.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+            console.log(j);
+            [animalCards[i], animalCards[j]] = [animalCards[j], animalCards[i]];
         }
     }
 
@@ -29,20 +27,19 @@ class App extends Component {
         const findAnimal = this.state.unselectedAnimals.find(item => item.animalType === animalType);
 
         if(findAnimal === undefined) {
-            this.setState({ 
+            this.setState({
                 message: "You already clicked that one!",
-                topScore: (this.state.curScore > this.state.topScore) ? this.state.curScore : this.state.topScore,
-                curScore: 0,
+                highScore: (this.state.currentScore > this.state.highScore) ? this.state.currentScore : this.state.highScore,
+                currentScore: 0,
                 animals: animals,
                 unselectedAnimals: animals
             });
-        }
-        else {
+        } else {
             const newAnimals = this.state.unselectedAnimals.filter(item => item.animalType !== animalType);
             
             this.setState({ 
                 message: "Nice!",
-                curScore: this.state.curScore + 1,
+                currentScore: this.state.currentScore + 1,
                 animals: animals,
                 unselectedAnimals: newAnimals
             });
@@ -54,19 +51,20 @@ class App extends Component {
     render() {
         return (
             <Wrapper>
-                <Navpills
+                <Nav
                     message={this.state.message}
-                    curScore={this.state.curScore}
-                    topScore={this.state.topScore}
+                    currentScore={this.state.currentScore}
+                    highScore={this.state.highScore}
                 />
                 <Title />
                 {
-                    this.state.animals.map(Animal => (
+                    this.state.animals.map((Animal,i) => (
                         <AnimalCard
+                            key={i}
                             animalType={Animal.animalType}
                             image={Animal.image}
                             selectAnimal={this.selectAnimal} 
-                            curScore={this.state.curScore}
+                            currentScore={this.state.currentScore}
                         />
                     ))
                 }

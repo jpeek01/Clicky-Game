@@ -1,7 +1,7 @@
 import React from "react";
 import "./Nav.css";
 
-const Navpills = props => (
+const Nav = props => (
     <div>
         <ul className="nav nav-pills nav-justified">
             <li id='title'><img src='/img/np_logo.png' id='nplogo' alt='NP Logo'/>National Park Memory Game</li>
@@ -14,10 +14,10 @@ const Navpills = props => (
             >
                 {props.message}
             </li>
-            <li>Score: <span>{props.curScore}</span> | Top Score: {props.topScore}</li>
+            <li>Score: <span>{props.currentScore}</span> | High Score: {props.highScore}</li>
         </ul>
     </div>
 );
 
-export default Navpills;
+export default Nav; 
 
